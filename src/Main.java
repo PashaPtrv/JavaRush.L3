@@ -1,17 +1,49 @@
 public class Main {
 
     public static void main(String[] args) {
-       /* Выведи на экран таблицу умножения 10 на 10 в следующем виде:
-        1 2 3 …
-        2 4 6 …
-        3 6 9 … */
-        for (int i = 1; i < 11; i++) {
-
-            for (int j = 1; j < 11; j++) {
-
-                System.out.print(i * j + " ");
-            }
-                System.out.println();
+        //Создать 7 объектов, чтобы на экран вывелись 7 цветов радуги (ROYGBIV).
+        //Каждый объект при создании выводит на экран определенный цвет.
+        Red red = new Red();
+        Orange orange = new Orange();
+        Yellow yellow = new Yellow();
+        Green green = new Green();
+        Blue blue = new Blue();
+        Indigo indigo = new Indigo();
+        Violet violet = new Violet();
+    }
+    public static class Red{
+        public Red(){
+            System.out.println("Red");
+        }
+    }
+    public static class Orange{
+        public Orange(){
+            System.out.println("Orange");
+        }
+    }
+    public static class Yellow{
+        public Yellow(){
+            System.out.println("Yellow");
+        }
+    }
+    public static class Green{
+        public Green(){
+            System.out.println("Green");
+        }
+    }
+    public static class Blue{
+        public Blue(){
+            System.out.println("Blue");
+        }
+    }
+    public static class Indigo{
+        public Indigo(){
+            System.out.println("Indigo");
+        }
+    }
+    public static class Violet{
+        public Violet(){
+            System.out.println("Violet");
         }
     }
 }
