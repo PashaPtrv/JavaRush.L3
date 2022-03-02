@@ -4,12 +4,14 @@ public class Main {
 
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
-        //Ввести с клавиатуры три имени, вывести на экран надпись name1 + name2 + name3 = Чистая любовь, да-да!
-        System.out.println("Введите три имени: ");
-        String name1 = scanner.nextLine();
-        String name2 = scanner.nextLine();
-        String name3 = scanner.nextLine();
-        System.out.println(name1 + " " + name2 + " " + name3 + " = Чистая любовь, да-да!");
+        //Ввести с клавиатуры отдельно Имя, число1, число2. Вывести надпись: «Имя» получает «число1» через «число2» лет.
+        System.out.println("Введите имя: ");
+        String name = scanner.nextLine();
+        System.out.println("Введите размер зарплаты: ");
+        int salary = scanner.nextInt();
+        System.out.println("Введите колличество лет: ");
+        int years = scanner.nextInt();
+        System.out.println(name + " получает " + salary + " через" + years + " лет");
 
 
     }
