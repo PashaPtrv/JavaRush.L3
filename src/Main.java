@@ -4,10 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
-        //вести с клавиатуры имя и вывести надпись: name зарабатывает $5,000. Ха-ха-ха!
-        System.out.println("Введите имя счастливчика: ");
+        //Ввести с клавиатуры два имени и вывести надпись:
+        //name1 проспонсировал name2, и она стала известной певицей.
+        System.out.println("Введите имя спонсора: ");
         String name1 = scanner.nextLine();
-        System.out.println(name1 + " зарабатывает $5,000. Ха-ха-ха!");
+        System.out.println("Введите имя певицы: ");
+        String name2 = scanner.nextLine();
+        System.out.println(name1 + " проспонсировал " + name2 + " и она стала певицей");
 
 
     }
