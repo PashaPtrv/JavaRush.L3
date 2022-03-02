@@ -2,21 +2,33 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Вывести на экран произведение чисел от 1 до 10.
-        //Подсказка: будет три миллиона с хвостиком
-        int currentSum = 1;
-        for (int i = 1; i < 11; i++){
-            currentSum *= i;
-        } System.out.println(currentSum);
+        //Вывести на экран все возможные комбинации слов «Мама», «Мыла», «Раму».
+        //Подсказка: их 6 штук. Каждую комбинацию вывести с новой строки. Слова не разделять.
 
-
-        //Вывести на экран сумму чисел от 1 до 10 построчно:
-        int currentNum = 0;
-        for (int j = 1; j <= 10; j++){
-           currentNum += j;
-           System.out.println(currentNum);
+        String text[] = {"Мама", "Мыла", "Раму"};
+        for (int i = 0; i < text.length; i++) {
+            for (int j = 0; j < text.length; j++) {
+                for (int k = 0; k < text.length; k++) {
+                    if (i != j && i != k && j != k) {
+                        System.out.println(text[i] + text[j] + text[k]);
+                    }
+                }
+            }
         }
+        // Так же есть более простой вариант, методом ручного перебора.
+        String a= "Мама";
+        String b= "Мыла";
+        String c= "Раму";
+
+        System.out.println(a+b+c);
+        System.out.println(a+c+b);
+        System.out.println(b+a+c);
+        System.out.println(b+c+a);
+        System.out.println(c+a+b);
+        System.out.println(c+b+a);
+
     }
-
-
 }
+
+
+
