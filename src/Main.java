@@ -4,13 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
-        //Ввести с клавиатуры два имени и вывести надпись:
-        //name1 проспонсировал name2, и она стала известной певицей.
-        System.out.println("Введите имя спонсора: ");
+        //Ввести с клавиатуры три имени, вывести на экран надпись name1 + name2 + name3 = Чистая любовь, да-да!
+        System.out.println("Введите три имени: ");
         String name1 = scanner.nextLine();
-        System.out.println("Введите имя певицы: ");
         String name2 = scanner.nextLine();
-        System.out.println(name1 + " проспонсировал " + name2 + " и она стала певицей");
+        String name3 = scanner.nextLine();
+        System.out.println(name1 + " " + name2 + " " + name3 + " = Чистая любовь, да-да!");
 
 
     }
